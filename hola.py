@@ -5,6 +5,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 input_data = ' '.join(sys.argv[1:])
 
 genai.configure(api_key= os.getenv('GOOGLE_API_KEY'))
