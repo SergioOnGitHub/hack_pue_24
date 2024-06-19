@@ -12,6 +12,7 @@ body {
   padding-bottom: 20px;
 }
 
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
@@ -60,6 +61,23 @@ input {
   height: auto;
 }
 
+.title {
+  font-size: 20px;
+}
+
+.web_page {
+  background-color: #E9F6FE;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .web_preview {
   padding: 5px;
   padding-left: 10px;
@@ -68,16 +86,6 @@ input {
 
 h1 {
   margin: 0;
-}
-
-.web_page {
-  background-color: #E9F6FE;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px;
 }
 
 .porcentage {
