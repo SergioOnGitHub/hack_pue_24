@@ -1,12 +1,13 @@
 import google.generativeai as genai
 from pathlib import Path
 import sys
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 input_data = ' '.join(sys.argv[1:])
 
-# Configurar tu API Key
-GOOGLE_API_KEY='AIzaSyCNOBav2lrF7RqjjnzxBnN8_00hsSn6YMs'
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key= os.getenv('GOOGLE_API_KEY'))
 
 # Crear el modelo generativo
 model = genai.GenerativeModel('gemini-pro')
